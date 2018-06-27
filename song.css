@@ -1,0 +1,91 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+*::after, *::before {margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100%;width: 100%;overflow:hidden;}
+a {text-decoration: none;}
+
+html {font-size:14px;position: relative;}
+@keyframes circle {
+    from { 
+        transform: rotate(0deg);
+     }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.song-page {
+    height: 100%;
+    background: url(http://p4.music.126.net/Wby8KD7yP89wp6ff8wJJ1Q==/109951163371397558.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.needle {
+    width: 7rem;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 6rem);
+}
+.disc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.disc{   
+    width: 21rem;
+    height: 21rem;   
+    background: url(http://s3.music.126.net/m/s/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48) no-repeat center;
+    background-size: cover;
+}
+
+.disc>.light {
+    position: absolute;
+    width: 21rem;
+    display: block;
+    animation: circle 20s infinite linear;
+} 
+.disc>.cover {
+    display: block;
+    position: absolute;
+    width: 21rem;
+    padding: 4rem;
+    border-radius: 50%;
+    animation: circle 20s infinite linear;
+}
+
+.info {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fefefe;
+}
+.info >.title {
+    font-size: 1.3rem;
+}
+
+.links {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.links>a{
+    display: block;
+    width: 45%;
+    line-height: 40px;
+    font-size: 1.2rem;
+    border: 1px solid #d33a31;
+    border-radius: 40px;
+    padding: 0 6px;
+    text-align: center;
+}
+.links a:first-child {
+    color: #d33a31;
+}
+.links a:last-child {
+    background: #d33a31;
+    color: #fefefe;
+}
