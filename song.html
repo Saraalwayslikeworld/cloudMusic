@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>song</title>
     <link rel="stylesheet" href="song.css">
+    <script>
+        let pageWidth = window.innerWidth
+        document.write(`<style>html{font-size:${pageWidth/10}px}</style>`)
+    </script>
+    <script src="//at.alicdn.com/t/font_728008_8kruonegnhf.js"></script>
 </head>
 <body>
     <div class="song-page">
         <div class="disc-container">
             <img class="needle" src="http://s3.music.126.net/m/s/img/needle-ip6.png?be4ebbeb6befadfcae75ce174e7db862" alt="">
-            <div class="disc">
-                <span class="play-btn play"></span>
+            <div class="disc playing">
+                <span class="play-btn">
+                    <svg class="icon">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </span>
                 <img class="light" src="http://s3.music.126.net/m/s/img/disc_light.png?2bb24f3fd11569809b817b4988f12bc7" alt="" >
                 <img class="cover" src="http://p3.music.126.net/5C7fm8m4vs4iorI2Ix0mhA==/109951163097126945.webp?imageView&thumbnail=247x0&quality=75&tostatic=0&type=webp" alt="">
             </div>

@@ -1,0 +1,135 @@
+$designWidth: 375;
+@function px($px){
+    @return $px/$designWidth*10 + rem
+}
+
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+*::after, *::before {margin: 0;padding: 0;box-sizing: border-box;}
+a {text-decoration: none;}
+ol,ul,li {list-style: none;}
+html,body{height: 100%;width: 100%;color: #333;}
+body {font-size:14px}
+
+.topBar {
+    background: #d43c33;
+    padding: px(16) px(10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topBar .logo {
+    width: px(142);
+}
+.topBar>a {
+    padding: 0 px(10);
+    border: 1px solid #fff;
+    border-radius: px(30);
+    color: #fefefe;
+    font-size: 15px;
+    line-height: px(30);
+}
+
+.siteNav>ol{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+.siteNav>ol>li {
+    width: 33.3%;
+    padding: px(12) 0;
+    flex-grow:1;
+    text-align: center;
+    font-size: 15px;
+}
+.siteNav li.active>span {
+    padding: px(12) 0;
+    color: #d43c33;
+    border-bottom: 2px solid #d43c33;
+}
+
+main {
+    padding-top: 20px;
+}
+.title {
+    margin-bottom: px(14);
+    padding-left: px(9);
+    border-left: 2px solid #d43c33;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+}
+.playLists>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.playLists li {
+    width: calc(33.3% - 1px);
+    margin-bottom: px(16);
+    text-align: center;
+}
+.playLists li img{
+    width: 100%;
+}
+
+
+.latestMusic li{
+    position: relative;
+    margin: 0 px(10);
+    padding: px(6) 0;
+    border-bottom: 1px solid#e2e2e2;
+}
+.latestMusic li h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+.latestMusic li p {
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.icon {
+    width: px(25); height: px(25);
+    fill: #aaa;
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    right: px(10);
+    top: px(14);
+}
+.ad {
+    padding-top: px(70);
+    padding-bottom: px(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url(//s3.music.126.net/m/s/img/recommand_bg_2x.png?d045faf…) no-repeat;
+    background-size: cover;
+}
+.ad .logo {
+    width: px(230);
+    height: px(44);
+}
+.ad a {
+    flex: 1;
+    border: 1px solid #d43c33;
+    border-radius: px(40);
+    color: #d43c33;
+    font-size: 16px;
+    line-height: px(40);
+    width: px(300);
+    text-align: center;
+    margin-top: px(15);
+    margin-bottom: px(5);
+}
+.ad .copyright {
+    color: #888;
+    font-size: 12px;
+    line-height: 16px;
+}

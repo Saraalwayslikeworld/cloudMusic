@@ -37,17 +37,14 @@ var songPage = {
     },
     songplay(){
         $('.play-btn').on("click",function(){
-            if($('.play-btn').hasClass('play')){
-                audio.pause()
-                $('.disc>.light').css('animation','none')
-                $('.disc>.cover').css('animation','none')
+            if($('.disc').hasClass('playing')){
+                $('.disc').removeClass('playing')
+                radio.pause()
             }else{
-                audio.play()
-                $('.disc>.light').css('animation','circle 20s infinite linear')
-                $('.disc>.cover').css('animation','circle 20s infinite linear')
+                $('.disc').addClass('playing')
+                radio.play()
             }
-            $('.disc>.play-btn').toggleClass('play').toggleClass('pause')
         })
-    }
+    }    
 }
 songPage.init()

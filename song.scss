@@ -1,0 +1,127 @@
+$designWidth: 375;
+@function px($px){
+    @return $px/$designWidth*10 + rem
+}
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+*::after, *::before {margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100%;width: 100%;overflow:hidden;}
+a {text-decoration: none;}
+
+body {font-size:14px;}
+@keyframes circle {
+    from { 
+        transform: rotate(0deg);
+     }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.song-page {
+    height: 100%;
+    background: url(http://p4.music.126.net/Wby8KD7yP89wp6ff8wJJ1Q==/109951163371397558.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.needle {
+    width: px(100);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    left: px(180);
+}
+.disc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: px(70);
+}
+
+.disc{  
+    position: relative; 
+    width: px(296);
+    height: px(296);   
+    background: url(http://s3.music.126.net/m/s/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48) no-repeat center;
+    background-size: cover;
+}
+.disc .play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1; 
+    width: px(70);
+    height: px(70); 
+}
+.disc.playing .play-btn>.icon{
+    display: none;
+}
+.play-btn .icon {
+    fill: #fefefe;
+    width: px(70);
+    height: px(70);
+}
+
+.disc>.light {
+    position: absolute;
+    width: 100%;
+    display: block;
+} 
+.disc>.cover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: px(55);
+    border-radius: 50%;
+}
+.disc.playing>.light,
+.disc.playing>.cover {
+    animation: circle 20s infinite linear;
+}
+.info {
+    flex-grow: 1;
+    margin-top: px(25);
+    text-align: center;
+    color: #fefefe;
+}
+.info >.title {
+    font-size: 18px;
+}
+.info .lyric {
+    height: px(100);
+    color:hsla(0,0%,100%,.6);
+    overflow: hidden;
+}
+.lyric>.lines {
+    line-height: 2;
+    font-size: 16px;
+    transform: translateY(-30px) 1s;
+}
+.lines > p.active {
+    color: #fefefe;
+}
+.links {
+    margin: 10px 0;
+    width: px(375);
+    display: flex;
+    justify-content: space-around;
+}
+.links>a{
+    display: block;
+    width: 45%;
+    line-height: px(40);
+    font-size: 18px;
+    border: 1px solid #d33a31;
+    border-radius: 40px;
+    text-align: center;
+    letter-spacing: .5em;
+}
+.links a:first-child {
+    color: #d33a31;
+}
+.links a:last-child {
+    background: #d33a31;
+    color: #fefefe;
+}
