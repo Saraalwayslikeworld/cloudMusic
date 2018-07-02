@@ -1,0 +1,11 @@
+$designWidth: 375;
+@function px($px){
+    @return $px/$designWidth*10 + rem
+}
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+*::after, *::before {margin: 0;padding: 0;box-sizing: border-box;}
+a {text-decoration: none;}
+ol,ul,li {list-style: none;}
+html,body{height: 100%;width: 100%;color: #333;}
+body {font-size:14px}
