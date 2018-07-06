@@ -7,8 +7,8 @@ var songPage = {
         this.songplay()
     },
     getlyric() { 
-        $.get('/static/lyric.json').then( object=>{
-            let {lyric} = object.lrc
+        $.get('/static/songs.json').then( object=>{
+            let {lyric} = object[0].lrc
             let arr = lyric.split('\n')
             let reg = /^\[(.+)\](.*)$/
             arr = arr.map(string =>{

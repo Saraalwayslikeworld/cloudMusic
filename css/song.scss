@@ -76,17 +76,21 @@ body {font-size:14px;}
     position: absolute;
     width: 100%;
     display: block;
-} 
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;
+}
 .disc>.cover {
     display: block;
     position: absolute;
     width: 100%;
     padding: px(55);
     border-radius: 50%;
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;   
 }
 .disc.playing>.light,
 .disc.playing>.cover {
-    animation: circle 20s infinite linear;
+    animation-play-state: running;
 }
 .info {
     flex-grow: 1;

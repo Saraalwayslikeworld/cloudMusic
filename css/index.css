@@ -29,6 +29,13 @@ body {
   font-size: 14px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
 .topBar {
   background: #d43c33;
   padding: 0.4266666667rem 0.2666666667rem;
@@ -54,6 +61,7 @@ body {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ccc;
+  background: #fff;
 }
 
 .siteNav > ol > li {
@@ -74,7 +82,8 @@ body {
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 3.3333333333rem;
+  padding-bottom: 20px;
 }
 
 .title {
@@ -90,6 +99,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 0.64rem;
 }
 
 .playLists li {
@@ -108,6 +118,7 @@ main {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 0.3466666667rem;
 }
 
 .playLists li .Num {
@@ -127,6 +138,10 @@ main {
   position: absolute;
   left: 0;
   top: 1px;
+}
+
+.latestMusic .loading {
+  text-align: center;
 }
 
 .latestMusic li {
