@@ -40,7 +40,6 @@ let indexPage = {
             }
             $('.latestMusic>ol').append($li)
         })
-    }
-    
+    }    
 }
 indexPage.init()
