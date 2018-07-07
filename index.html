@@ -63,8 +63,8 @@
     </header>
     
     <main>
-        <ol class="tabContainer">
-            <li class="active recommendMusic">
+        <ol class="tabContent">
+            <li class="active" id="recommendMusic">
                 <section class="playLists">
                     <h3 class="title">推荐歌单</h3>
                     <ul>
@@ -196,11 +196,43 @@
                     <p class="copyright">网易公司版权所有©1997-2018 saraWong仿作</p>
                 </section>
             </li>
-            <li>
+            <li id="hotList">
                 tab2
+                <div class="hotTop">
+                    <div class="icon"></div>
+                    <p>更新日期：<span class="hotdate"></span></p>
+                </div>
+                <ol class="list">
+                    <li>
+                        <h3>歌曲名1</h3>
+                        <p>歌手1-专辑1</p>
+                        <svg class="icon">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                        <a href="./song.html"></a>
+                    </li>
+                </ol>
+                <div class="tomore"><a>查看完整榜单</a></div>
             </li>
-            <li>
-                <input type="text">
+            <li id="search">
+                <div class="wrap">
+                    <section class="inputbox">
+                        <input class="search" type="text">
+                        <label for="">搜索歌曲、歌手、专辑</label>
+                    </section>
+                    <section class="hotWords">
+                        <h3 class="title">热门搜索</h3>
+                        <div class="words">
+                            <span><a href="#">毛不易</a></span>
+                            <span><a href="#">毛不易</a></span>
+                            <span><a href="#">毛不易</a></span>
+                            <span><a href="#">毛不易</a></span>
+                        </div>
+                    </section>
+                    <section class="results">
+                        <ol></ol>
+                    </section>
+                </div>
             </li>
         </ol>
     </main>

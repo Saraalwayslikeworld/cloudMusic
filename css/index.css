@@ -81,9 +81,16 @@ header {
   border-bottom: 2px solid #d43c33;
 }
 
-main {
-  padding-top: 3.3333333333rem;
-  padding-bottom: 20px;
+.tabContent {
+  padding-top: 2.8rem;
+}
+
+.tabContent > li {
+  display: none;
+}
+
+.tabContent > li.active {
+  display: block;
 }
 
 .title {
@@ -93,6 +100,10 @@ main {
   font-size: 0.4533333333rem;
   line-height: 17px;
   font-weight: 400;
+}
+
+#recommendMusic {
+  padding-top: 0.5333333333rem;
 }
 
 .playLists > ul {
@@ -229,6 +240,109 @@ main {
   color: #888;
   font-size: 0.32rem;
   line-height: 16px;
+}
+
+#hotList .list li {
+  position: relative;
+  margin-left: 0.2666666667rem;
+  padding: 0.16rem 0;
+  border-bottom: 1px solid #e2e2e3;
+}
+
+#hotList .list li h3 {
+  font-size: 0.4533333333rem;
+  font-weight: 400;
+}
+
+#hotList .list li p {
+  font-size: 0.32rem;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: normal;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+#hotList .list li p > .icon {
+  width: 0.32rem;
+  height: 0.32rem;
+  fill: #FE682F;
+  margin-right: 4px;
+}
+
+#hotList .list li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hotList .list li > .icon {
+  width: 0.5866666667rem;
+  height: 0.5866666667rem;
+  fill: #aaa;
+  overflow: hidden;
+}
+
+#hotList .list li > .icon {
+  position: absolute;
+  right: 0.2666666667rem;
+  top: 0.3733333333rem;
+}
+
+#search .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputbox {
+  position: relative;
+  padding: 0.4rem 0.2666666667rem;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 1.2rem;
+  top: 0.5333333333rem;
+  color: #CDCDCD;
+}
+
+.inputbox input {
+  height: 30px;
+  width: 100%;
+  padding: 0 0.8rem;
+  border: 1px solid #EBECEC;
+  border-radius: 0.8rem;
+  background: #EBECEC;
+  caret-color: #888;
+  outline: none;
+}
+
+#search .hotWords {
+  border-top: 1px solid #E1E2E3;
+  padding: 0.4rem 0.2666666667rem;
+}
+
+.hotWords .title {
+  font-size: 0.32rem;
+  border: none;
+}
+
+.hotWords .words span {
+  margin: 0 8px 8px 0;
+  padding: 4px 0.3733333333rem;
+  border: 1px solid #EBECEC;
+  border-radius: 14px;
+}
+
+.hotWords .words a {
+  font-size: 0.3733333333rem;
+  color: #333;
 }
 
 /*# sourceMappingURL=index.css.map */

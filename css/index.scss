@@ -21,9 +21,13 @@ header { position: fixed; top: 0; z-index:10; width:100%;}
 .siteNav li>span { display: inline-block; padding: px(9) px(5); } 
 .siteNav li.active>span { color: #d43c33; border-bottom: 2px solid #d43c33; }
 
-main { padding-top: px(125); padding-bottom: 20px; } 
+.tabContent{ padding-top: px(105);} 
+.tabContent>li {display:none;}
+.tabContent>li.active {display:block;}
+
 .title { margin-bottom: px(14); padding-left: px(9); border-left: 2px solid #d43c33; font-size: px(17); line-height: 17px; font-weight: 400; }
 
+#recommendMusic {padding-top: px(20);}
 .playLists>ul{ display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: px(24);} 
 .playLists li { width: calc(33.3% - 2px); margin-bottom: px(16);position: relative;} 
 .playLists li img{ width: 100%; }
@@ -47,3 +51,60 @@ main { padding-top: px(125); padding-bottom: 20px; }
 .ad .logo { width: px(230); height: px(44); } 
 .ad a { flex: 1; border: 1px solid #d43c33; border-radius: px(40); color: #d43c33; font-size: px(16); line-height: px(40); width: px(300); text-align: center; margin-top: px(15); margin-bottom: px(5); }
 .ad .copyright { color: #888; font-size: px(12); line-height: 16px; }
+
+
+#hotList .list li{ position: relative; margin-left: px(10); padding: px(6) 0; border-bottom: 1px solid#e2e2e3; } 
+#hotList .list li h3{ font-size: px(17); font-weight: 400; } 
+#hotList .list li p { font-size: px(12); color: #888; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: normal; display: flex; align-items: center; margin-top:4px;}
+#hotList .list li p>.icon {
+    width: px(12); height: px(12); fill: #FE682F; margin-right: 4px;
+}
+#hotList .list li a { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#hotList .list li>.icon { width: px(22); height: px(22); fill: #aaa; overflow: hidden; } 
+#hotList .list li>.icon { position: absolute; right: px(10); top: px(14); }
+
+#search .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputbox {
+    position: relative;
+    padding: px(15) px(10);
+}
+.inputbox label {
+    position: absolute;
+    left: px(45);
+    top: px(20);
+    color: #CDCDCD;
+}
+.inputbox input{ 
+    height: 30px;
+    width: 100%;
+    padding: 0 px(30);
+    border: 1px solid #EBECEC;
+    border-radius: px(30);
+    background: #EBECEC;
+    caret-color: #888;
+    outline: none;
+}
+#search .hotWords {
+    border-top: 1px solid #E1E2E3;
+    padding: px(15) px(10);
+}
+.hotWords .title {
+    font-size: px(12);
+    border: none;
+}
+.hotWords .words span{
+    margin: 0 8px 8px 0;
+    padding: 4px px(14);
+    border: 1px solid #EBECEC;
+    border-radius: 14px;
+}
+.hotWords .words a {
+    font-size: px(14);
+    color: #333; 
+}
+

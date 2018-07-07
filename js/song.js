@@ -49,6 +49,7 @@ let songPage = {
     playerInit(url){
         let audio = document.createElement('audio')
         audio.src = url
+
         audio.oncanplay = ()=>{ 
             $('.disc').addClass('playing')
             audio.play()
@@ -65,13 +66,12 @@ let songPage = {
                 audio.play()
             }
         })
+
         setInterval(()=>{
             let curtime = audio.currentTime
             let min = ~~(curtime/60)
             let sec = curtime - 60*min
-            min = min>10?min:'0'+min
-            sec = sec>10?sec:'0'+sec
-            let time = `${min}:${sec}`
+            let time = `${min>10?min:'0'+min}:${sec>10?sec:'0'+sec}`
             let $line = $('.lines>p')
             let curline
             for(let i=0;i<$line.length;i++){
