@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>主页</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="//at.alicdn.com/t/font_728008_i9ygqc4p8hq.js"></script>
+    <script src="//at.alicdn.com/t/font_728008_ardhsabi0bo.js"></script>
     <script>
         let pageWidth = window.innerWidth
         document.write(`<style>html{font-size:${pageWidth / 10}px}</style>`)
@@ -197,40 +197,48 @@
                 </section>
             </li>
             <li id="hotList">
-                tab2
                 <div class="hotTop">
-                    <div class="icon"></div>
-                    <p>更新日期：<span class="hotdate"></span></p>
+                    <img src="http://pb4y0dau4.bkt.clouddn.com/hotTop.png" alt="" class="icon">
+                    <p>更新日期：<span class="update">5月17日</span></p>
                 </div>
+                <p class="loading"><img src="http://pb4y0dau4.bkt.clouddn.com/loading.gif" alt=""></p>
                 <ol class="list">
-                    <li>
-                        <h3>歌曲名1</h3>
-                        <p>歌手1-专辑1</p>
-                        <svg class="icon">
-                            <use xlink:href="#icon-play"></use>
-                        </svg>
-                        <a href="./song.html"></a>
-                    </li>
+                    <!-- <li>
+                        <div class="rank">01</div>
+                        <a href="#">
+                            <div class="info">
+                                <h3>歌曲名1</h3>
+                                <p>歌曲1-专辑1</p>
+                                <svg class="icon">
+                                    <use xlink:href="#icon-play"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li> -->
                 </ol>
-                <div class="tomore"><a>查看完整榜单</a></div>
+                <div class="tomore"><a>查看完整榜单></a></div>
             </li>
             <li id="search">
                 <div class="wrap">
                     <section class="inputbox">
                         <input class="search" type="text">
                         <label for="">搜索歌曲、歌手、专辑</label>
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#icon-delete"></use>
+                        </svg>
                     </section>
                     <section class="hotWords">
                         <h3 class="title">热门搜索</h3>
-                        <div class="words">
-                            <span><a href="#">毛不易</a></span>
-                            <span><a href="#">毛不易</a></span>
-                            <span><a href="#">毛不易</a></span>
-                            <span><a href="#">毛不易</a></span>
-                        </div>
+                        <ul class="words">
+                        </ul>
                     </section>
                     <section class="results">
-                        <ol></ol>
+                        <h3 class="keyword">搜索“n”</h3>
+                        <ol>
+                        </ol>
                     </section>
                 </div>
             </li>

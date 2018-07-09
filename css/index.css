@@ -73,7 +73,7 @@ header {
 
 .siteNav li > span {
   display: inline-block;
-  padding: 0.24rem 0.1333333333rem;
+  padding: 9px 5px;
 }
 
 .siteNav li.active > span {
@@ -100,6 +100,11 @@ header {
   font-size: 0.4533333333rem;
   line-height: 17px;
   font-weight: 400;
+}
+
+.loading {
+  text-align: center;
+  margin: 0.2133333333rem;
 }
 
 #recommendMusic {
@@ -151,23 +156,34 @@ header {
   top: 1px;
 }
 
-.latestMusic .loading {
-  text-align: center;
-}
-
 .latestMusic li {
   position: relative;
   margin-left: 0.2666666667rem;
-  padding: 0.16rem 0;
-  border-bottom: 1px solid #e2e2e3;
 }
 
-.latestMusic li h3 {
+.latestMusic li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.latestMusic .rank {
+  display: none;
+}
+
+.latestMusic a {
+  flex: 1;
+  border-bottom: 1px solid #e2e2e3;
+  padding: 0.16rem 0;
+}
+
+.latestMusic .info h3 {
   font-size: 0.4533333333rem;
   font-weight: 400;
+  color: #333;
 }
 
-.latestMusic li p {
+.latestMusic .info p {
   font-size: 0.32rem;
   color: #888;
   overflow: hidden;
@@ -179,29 +195,21 @@ header {
   margin-top: 4px;
 }
 
-.latestMusic li p > .icon {
+.latestMusic .info p > .icon {
   width: 0.32rem;
   height: 0.32rem;
   fill: #FE682F;
   margin-right: 4px;
 }
 
-.latestMusic li a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.latestMusic li > .icon {
+.latestMusic .info > .icon {
   width: 0.5866666667rem;
   height: 0.5866666667rem;
   fill: #aaa;
   overflow: hidden;
 }
 
-.latestMusic li > .icon {
+.latestMusic .info > .icon {
   position: absolute;
   right: 0.2666666667rem;
   top: 0.3733333333rem;
@@ -242,19 +250,67 @@ header {
   line-height: 16px;
 }
 
+#hotList .hotTop {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  height: 3.8666666667rem;
+  padding-left: 0.5333333333rem;
+}
+
+.hotTop .icon {
+  width: 3.7866666667rem;
+  margin-top: 0.6666666667rem;
+}
+
+.hotTop p {
+  margin-top: 8px;
+  font-size: 0.32rem;
+  color: #fefefe;
+}
+
+.hotTop::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat center;
+  z-index: -1;
+}
+
 #hotList .list li {
   position: relative;
   margin-left: 0.2666666667rem;
-  padding: 0.16rem 0;
-  border-bottom: 1px solid #e2e2e3;
 }
 
-#hotList .list li h3 {
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list .rank {
+  color: #999;
   font-size: 0.4533333333rem;
   font-weight: 400;
+  width: 0.7466666667rem;
 }
 
-#hotList .list li p {
+.list a {
+  flex: 1;
+  border-bottom: 1px solid #e2e2e3;
+  padding: 0.16rem 0;
+}
+
+.list .info h3 {
+  font-size: 0.4533333333rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.list .info p {
   font-size: 0.32rem;
   color: #888;
   overflow: hidden;
@@ -266,32 +322,31 @@ header {
   margin-top: 4px;
 }
 
-#hotList .list li p > .icon {
+.list .info p > .icon {
   width: 0.32rem;
   height: 0.32rem;
   fill: #FE682F;
   margin-right: 4px;
 }
 
-#hotList .list li a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#hotList .list li > .icon {
+.list .info > .icon {
   width: 0.5866666667rem;
   height: 0.5866666667rem;
   fill: #aaa;
   overflow: hidden;
 }
 
-#hotList .list li > .icon {
+.list .info > .icon {
   position: absolute;
   right: 0.2666666667rem;
   top: 0.3733333333rem;
+}
+
+#hotList .tomore {
+  text-align: center;
+  color: #999;
+  height: 1.4666666667rem;
+  line-height: 1.4666666667rem;
 }
 
 #search .wrap {
@@ -302,25 +357,56 @@ header {
 
 .inputbox {
   position: relative;
-  padding: 0.4rem 0.2666666667rem;
+  padding: 15px 10px;
+}
+
+#search.searching .inputbox label {
+  display: none;
 }
 
 .inputbox label {
   position: absolute;
-  left: 1.2rem;
-  top: 0.5333333333rem;
+  left: 42px;
+  top: 20px;
   color: #CDCDCD;
 }
 
 .inputbox input {
   height: 30px;
   width: 100%;
-  padding: 0 0.8rem;
+  padding: 0 30px;
   border: 1px solid #EBECEC;
   border-radius: 0.8rem;
   background: #EBECEC;
   caret-color: #888;
   outline: none;
+}
+
+.inputbox .icon-search {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 13px;
+  height: 13px;
+  fill: #CDCDCD;
+}
+
+#search.searching .inputbox .icon-close {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  width: 15px;
+  height: 15px;
+  fill: #999;
+}
+
+.inputbox .icon-close {
+  display: none;
+}
+
+#search.searching .hotWords {
+  display: none;
 }
 
 #search .hotWords {
@@ -333,7 +419,8 @@ header {
   border: none;
 }
 
-.hotWords .words span {
+.hotWords .words li {
+  float: left;
   margin: 0 8px 8px 0;
   padding: 4px 0.3733333333rem;
   border: 1px solid #EBECEC;
@@ -343,6 +430,79 @@ header {
 .hotWords .words a {
   font-size: 0.3733333333rem;
   color: #333;
+}
+
+#search.searching .results {
+  display: block;
+}
+
+.results {
+  display: none;
+}
+
+.results li {
+  position: relative;
+  margin-left: 0.2666666667rem;
+}
+
+.results li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.results .rank {
+  display: none;
+}
+
+.results a {
+  flex: 1;
+  border-bottom: 1px solid #e2e2e3;
+  padding: 0.16rem 0;
+}
+
+.results .info h3 {
+  font-size: 0.4533333333rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.results .info p {
+  font-size: 0.32rem;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: normal;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.results .info p > .icon {
+  width: 0.32rem;
+  height: 0.32rem;
+  fill: #FE682F;
+  margin-right: 4px;
+}
+
+.results .info > .icon {
+  width: 0.5866666667rem;
+  height: 0.5866666667rem;
+  fill: #aaa;
+  overflow: hidden;
+}
+
+.results .info > .icon {
+  position: absolute;
+  right: 0.2666666667rem;
+  top: 0.3733333333rem;
+}
+
+.results .keyword {
+  color: #507daf;
+  font-weight: 400;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
