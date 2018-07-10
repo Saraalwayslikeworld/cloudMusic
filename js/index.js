@@ -5,7 +5,7 @@ let indexPage = {
         this.hotSearch()
     },
     getLatestMuisc(){     
-        $.get('./static/songs.json').then((list)=>{
+        $.get('static/songs.json').then((list)=>{
             this.render(list,$('.latestMusic>ol'))
         })
         $('.latestMusic>.loading').remove()
