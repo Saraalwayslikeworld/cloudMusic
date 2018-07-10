@@ -1,3 +1,4 @@
+<<<<<<< HEAD:static/songs.JSON
 {
    "list":[
         {   
@@ -52,3 +53,57 @@
         }
     ]
 }
+=======
+[
+    {   
+        "id": 1,
+        "isSQ": true,
+        "title": "白兰鸽巡游记",
+        "singer": "丢火车乐队",
+        "album": "游歌",
+        "img": "http://pb4y0dau4.bkt.clouddn.com/1.jpg",
+        "url": "http://pb4y0dau4.bkt.clouddn.com/1.mp3",
+        "lrc": "[00:00.00] 作曲 : 球子\n[00:01.00] 作词 : 球子\n[00:15.30]我从远方来到陌生的地方\n[00:22.29]就像沉睡了不知多少个年头\n[00:29.14]我将不顾一切的来到这地方\n[00:36.62]放眼望去一路春光不再平凡\n[00:44.19]啊~时光穿梭如水一般\n[00:50.82]啊~昨天的路已经很远\n[00:58.93]白兰鸽 白兰鸽\n[01:01.65]飞过彩虹划过的瞬间\n[01:05.82]他就在远方\n[01:07.82]不要停止追寻着他\n[01:12.72]白兰鸽 白兰鸽\n[01:16.48]飞过似水华丽的人间\n[01:19.96]直到拥有了一切\n[01:22.73]还是飞向北方\n[01:56.65]我从远方来到陌生的地方\n[02:03.85]就像沉睡了不知多少个年头\n[02:11.16]我将不顾一切的来到这地方\n[02:18.74]放眼望去一路春光不再平凡\n[02:25.96]啊~时光穿梭如水一般\n[02:33.06]啊~昨天的路已经很远\n[02:40.82]白兰鸽 白兰鸽\n[02:43.93]飞过彩虹划过的瞬间\n[02:47.71]他就在远方\n[02:49.56]不要停止追寻着他\n[02:54.77]白兰鸽 白兰鸽\n[02:58.69]飞过似水华丽的人间\n[03:02.04]直到拥有了一切\n[03:04.47]还是飞向北方\n[03:10.00]白兰鸽 白兰鸽\n[03:13.08]飞过彩虹划过的瞬间\n[03:16.71]他就在远方\n[03:18.57]不要停止追寻着他\n[03:24.23]白兰鸽 白兰鸽\n[03:27.54]飞过似水华丽的人间\n[03:31.27]直到拥有了一切\n[03:34.31]还是飞向北方\n[03:39.28]白兰鸽 白兰鸽\n[03:42.09]飞过似水华丽的人间\n[03:46.66]直到拥有了一切\n[03:48.16]还是飞向北方\n"
+    },
+    {
+        "id": 2,
+        "isSQ": true,
+        "title": "SoulMate",
+        "singer": "Justin Timberlake",
+        "album": "SoulMate",
+        "img": "http://pb4y0dau4.bkt.clouddn.com/2.jpg",
+        "url": "http://pb4y0dau4.bkt.clouddn.com/2.mp3",
+        "lrc": "[00:03.64]Summer starts now\n[00:05.06]\n[00:08.45]I love your heartbeat givin' me rhythm\n[00:12.55]And I can feel your frequency, so unique\n[00:16.93]In other words, such a freak, set me free\n[00:21.20]I wanna be, wanna be\n[00:23.70]I wanna be, I wanna be your—\n[00:26.31]Soulmate, for the night\n[00:29.93]Let me put my soul on you, it's only right\n[00:33.81]Let me pull you up out your body, into mine\n[00:38.10]Let me be your soulmate for the night\n[00:42.61]Just for the night, for the night\n[00:46.81]Just for the night, for the night\n[00:51.28]Just for the night\n[00:53.93]Two rhythms turn into one heartbeat, yeah\n[00:58.87]Magic when you get close to me\n[01:02.63]And we can disappear\n[01:03.81]Make it disappear, that's too many clothes for me\n[01:06.79]I wanna be\n[01:07.63]I wanna be, I wanna be your—\n[01:09.93]Soulmate, for the night\n[01:13.06]Let me put my soul on you, it's only right\n[01:17.30]Let me pull you up out your body, into mine\n[01:21.55]Let me be your soulmate for the night\n[01:26.24]Just for the night, for the night\n[01:30.83]Just for the night, for the night\n[01:35.04]Just for the night, for the night\n[01:39.58]Just for the night, for the night\n[01:43.78]Just for the night\n[01:46.17]Whatever you believe in could be real\n[01:51.20]'Cause I believe in miracles\n[01:53.44]So please right now, you and me right now\n[01:57.00]We could live our dreams right now\n[01:59.23]First, lay down\n[02:01.49]I'ma be your soulmate (ayy), for the night\n[02:05.41]Let me put my soul on you, it's only right\n[02:09.73]Let me pull you up out your body, into mine\n[02:14.58]Let me be your soulmate for the night\n[02:18.82]Just for the night\n[02:20.29]Soulmate for the night\n[02:22.86]Let me put my soul on you, it's only right\n[02:27.23]Let me pull you up out your body, into mine\n[02:31.55]Let me be your soulmate for the night\n[02:36.04]Just for the night, for the night\n[02:40.11]Ooh, whatever you believe in could be real\n[02:41.33]Just for the night, for the night\n[02:45.01]Just for the night, for the night\n[02:48.50]Ooh, whatever you believe in could be real\n[02:50.02]Just for the night, for the night\n[02:53.70]Just for the night\n[02:56.67]Ooh, whatever you believe in could be real\n[03:01.01]I love your heartbeat, ayy\n[03:04.84]I love your—whatever you believe in could be real\n[03:08.89]I love your heartbeat\n[03:11.92]I love your—\n"
+    },
+    {
+        "id": 3,
+        "isSQ": false,
+        "title": "哭砂",
+        "singer": "张惠妹",
+        "album": "A-mei Acoustic Best",
+        "img": "http://pb4y0dau4.bkt.clouddn.com/3.jpg",
+        "url": "http://pb4y0dau4.bkt.clouddn.com/3.mp3",
+        "lrc": "[00:32.650]你是我最苦涩的等待\n[00:39.730]让我欢喜又害怕未来\n[00:47.20]你最爱说你是一颗尘埃\n[00:53.550]偶而会恶作剧的飘进我眼里\n[01:00.790]宁愿我哭泣不让我爱你\n[01:08.240]你就真的像尘埃消失在风里\n[01:15.170]难得来看我却又离开我\n[01:22.500]让那手中泻落的砂像泪水流\n[01:30.850]你是我最痛苦的抉择\n[01:37.950]为何你从不放弃飘泊\n[01:45.320]海对你是那么难分难舍\n[01:51.700]你总是带回满口袋的砂给我\n[01:58.950]难得来看我却又离开我\n[02:06.360]让那手中泻落的砂像泪水流\n[02:14.440]风吹来的砂落在悲伤的眼里\n[02:21.750]谁都看出我在等你\n[02:28.970]风吹来的砂堆积在心里\n[02:35.820]是谁也擦不去的痕迹\n[02:43.570]风吹来的砂穿过所有的记忆\n[02:50.820]谁都知道我在想你\n[02:57.940]风吹来的砂冥冥在哭泣\n[03:04.750]难道早就预言了分离\n[03:52.800]你是我最苦涩的等待\n[03:59.930]让我欢喜又害怕未来\n[04:07.70]你最爱说你是一颗尘埃\n[04:13.530]偶而会恶作剧的飘进我眼里\n[04:20.839]宁愿我哭泣不让我爱你\n[04:28.80]你就真的像尘埃消失在风里\n[04:36.300]风吹来的砂落在悲伤的眼里\n[04:43.550]谁都看出我在等你\n[04:50.659]风吹来的砂堆积在心里\n[04:57.560]是谁也擦不去的痕迹\n[05:05.720]风吹来的砂穿过所有的记忆\n[05:12.650]谁都知道我在想你\n[05:19.820]风吹来的砂冥冥在哭泣\n[05:26.540]难道早就预言了分离\n"
+    },
+    {
+        "id": 4,
+        "isSQ": false,
+        "title": "匆匆那年",
+        "singer": "王菲",
+        "album": "匆匆那年",
+        "img": "http://pb4y0dau4.bkt.clouddn.com/4.jpg",
+        "url": "http://pb4y0dau4.bkt.clouddn.com/4.mp3",
+        "lrc": "[00:00.00] 作曲 : 梁翘柏\n[00:01.00] 作词 : 林夕\n[00:11.18]\n[00:27.92]匆匆那年\n[00:28.75]我们究竟说了几遍再见\n[00:31.00]之后再拖延\n[00:33.46]可惜谁有没有爱过\n[00:35.29]不是一场七情上面的雄辩\n[00:39.04]匆匆那年\n[00:39.99]我们一时匆忙撂下\n[00:41.80]难以承受的诺言\n[00:44.64]只有等别人兑现\n[00:50.28]不怪那吻痕\n[00:52.55]还没积累成茧\n[00:55.88]拥抱着冬眠\n[00:58.05]也没能羽化再成仙\n[01:01.56]不怪这一段情\n[01:04.24]没空反复再排练\n[01:06.96]是岁月宽容\n[01:09.46]恩赐反悔的时间\n[01:18.00]如果再见不能红着眼\n[01:21.18]是否还能红著脸\n[01:23.97]就像那年匆促\n[01:25.31]刻下永远一起\n[01:26.69]那样美丽的谣言\n[01:29.25]如果过去还值得眷恋\n[01:32.38]别太快冰释前嫌\n[01:35.25]谁甘心就这样\n[01:37.97]彼此无挂也无牵\n[01:40.91]我们要互相亏欠\n[01:46.46]要不然凭何怀缅\n[01:51.05]\n[01:57.84]匆匆那年\n[01:58.76]我们见过太少世面\n[02:00.54]只爱看同一张脸\n[02:03.43]那么莫名其妙\n[02:04.75]那么讨人欢喜\n[02:06.14]闹起来又太讨厌\n[02:09.02]相爱那年活该匆匆\n[02:10.77]因为我们不懂\n[02:12.21]顽固的诺言\n[02:14.62]只是分手的前言\n[02:20.23]不怪那天太冷\n[02:23.04]泪滴水成冰\n[02:25.90]春风也一样\n[02:28.07]没吹进凝固的照片\n[02:31.50]不怪每一个人\n[02:34.29]没能完整爱一遍\n[02:37.06]是岁月善意\n[02:39.42]落下残缺的悬念\n[02:47.79]如果再见不能红着眼\n[02:51.20]是否还能红著脸\n[02:54.00]就像那年匆促\n[02:55.38]刻下永远一起\n[02:56.78]那样美丽的谣言\n[02:59.26]如果过去还值得眷恋\n[03:02.31]别太快冰释前嫌\n[03:05.16]谁甘心就这样\n[03:07.97]彼此无挂也无牵\n[03:10.50]如果再见不能红着眼\n[03:13.60]是否还能红著脸\n[03:16.43]就像那年匆促\n[03:17.82]刻下永远一起\n[03:19.26]那样美丽的谣言\n[03:21.74]如果过去还值得眷恋\n[03:24.90]别太快冰释前嫌\n[03:27.68]谁甘心就这样\n[03:30.50]彼此无挂也无牵\n[03:33.34]我们要互相亏欠\n[03:38.94]我们要藕断丝连\n[03:43.52]\n"
+    },
+    {
+        "id": 5,
+        "isSQ": true,
+        "title": "Yellow",
+        "singer": "Coldplay",
+        "album": "Yellow",
+        "img": "http://pb4y0dau4.bkt.clouddn.com/5.jpg",
+        "url": "http://pb4y0dau4.bkt.clouddn.com/5.mp3",
+        "lrc": "[00:00.00] 作曲 : Coldplay\n[00:01.00] 作词 : Coldplay\n[00:33.790]Look at the stars\n[00:36.780]Look how they shine for you\n[00:42.070]And everything you do\n[00:47.880]Yeah' they were all Yellow\n[00:50.540]I came along\n[00:53.140]I wrote a song for you\n[00:58.790]And all the things you do\n[01:05.090] it was called Yellow\n[01:10.160]So then I took my turn\n[01:14.410]Oh what a thing to have done\n[01:21.230]And it was all Yellow\n[01:29.040]Your skin\n[01:32.320]Oh yeah' your skin and bones\n[01:35.540]Turn into something beautiful\n[01:40.080]Do you know? you know I love you so\n[01:48.560]You know I love you so\n[02:14.150]I swam across\n[02:16.900]I jumped across for you\n[02:22.350]Oh what a thing to do\n[02:27.960]Cos you were all Yellow\n[02:31.040]I drew a line\n[02:33.840]I drew a line for you\n[02:39.130]Oh what a thing to do\n[02:44.740]And it was all Yellow\n[02:52.490]Your skin\n[02:55.920]Oh yeah your skin and bones\n[02:58.510]Turn into something beautiful\n[03:04.370]Do you know?\n[03:07.010]For you I'd bleed myself dry\n[03:11.820]For you I'd bleed myself dry\n[03:36.900]It's true\n[03:40.410]Look how they shine for you\n[03:45.500]Look how they shine for you\n[03:51.330]Look how they shine for\n[03:56.690]Look how they shine for you\n[04:02.610]Look how they shine for you\n[04:08.160]Look how they shine\n[04:11.170]Look at the stars\n[04:13.730]Look how they shine for you\n[04:19.250]And all the things that you do\n"
+    }
+]
+>>>>>>> c305603eb97292a2f968c62ac6ddcaaff51f77a2:static/songs.json
