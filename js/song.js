@@ -6,8 +6,8 @@ let songPage = {
        this.getMusicData()
     },
     getMusicData(){
-        $.get('/static/songs.json').then( list=>{
-            let song = list.filter(item=>{
+        $.get('/static/songs.json').then( data=>{
+            let song = data.list.filter(item=>{
                 return item.id === id
             })[0]
             let {title,singer,img,url,lrc} = song
