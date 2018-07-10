@@ -129,6 +129,7 @@ header {
 }
 
 .playLists li p {
+  color: #333;
   padding: 0 0.16rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;

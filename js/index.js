@@ -64,6 +64,7 @@ let indexPage = {
                     $('.tabContent>li').eq(index).attr("isLoaded","yes")
                     $('.update').text(res.updateTime)
                     this.render(res.data,$('#hotList .list'))
+                    for(let i =0;i<3;i++){$('#hotList .list').find('li>.rank').eq(i).css("color","#df3436")}
                 })
                 
             }else if(index===2&&$('.tabContent>li').eq(2).attr("isLoaded")!=="yes"){

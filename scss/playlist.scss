@@ -9,3 +9,194 @@ a {text-decoration: none;}
 ol,ul,li {list-style: none;}
 html,body{height: 100%;width: 100%;color: #333;}
 body {font-size:14px}
+body {position: relative;}
+
+header {
+    position: relative;
+    height: px(185);
+    overflow: hidden;  
+}
+header .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(//via.placeholder.com/170x170);
+    background-size: cover;
+    filter: blur(30px);
+    transform: scale(2);
+    z-index: -1;
+}
+header .wrap {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 30px 15px;
+}
+header .cover {
+    position: relative;
+    background: url(//via.placeholder.com/170x170) no-repeat center;
+    background-size: cover;
+    width: px(126);
+    height: px(126);
+}
+.cover .tag {
+    position: absolute;
+    top: px(10);
+    left: 0;
+    font-size: px(9);
+    padding:0 8px;
+    line-height: 17px;
+    background: rgba(217,48,48,.8);
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    color: #fff;
+}
+.cover .num {
+    position: absolute; 
+    top:2px; 
+    right: 2px; 
+    font-size: px(12); 
+    line-height: px(18);
+    color:#fefefe; 
+    background: linear-gradient(90deg,transparent,rgba(0,0,0,.2));
+}
+.cover .num>.icon {
+    width:px(14); 
+    height:px(14); 
+    fill:#fefefe;
+    padding: 1px;
+    position: absolute;
+    top: 2px;
+    right: 35px;
+}
+header .info {
+    flex:1;
+    margin-left: px(16);
+}
+header .info h3 {
+    font-size: 17px;
+    color: #fefefe;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 30px;
+}
+header .info .avatar{
+    position: relative;
+    display: inline-block;
+}
+header .info .avatar img {
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+header .info .avatar .icon {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    width:12px;
+    height: 12px;
+    fill: #d33a31;
+}
+header .info .user>span {
+    line-height: 30px;
+    color: hsla(0,0%,100%,.7);
+}
+section.intro {
+    padding: 10px 15px;
+    color: #666;
+}
+.intro .tags {
+    margin-bottom: 10px;
+}
+.intro .tags>span {
+    padding: 1px 8px;
+    font-size: 12px;
+    margin-right: px(10);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+.intro .dsp {
+    position: relative;
+    margin-bottom: 18px;
+    line-height: 1.5em;
+}
+.intro .dsp.fold .content{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.intro .dsp .icon {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    fill: #aaa;
+}
+.intro .dsp.fold .icon {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    z-index: 10;
+}
+
+.playlist>.title {
+    font-size: 12px;
+    padding: 4px;
+    padding-left: 10px;
+    background: #eeeff0;
+    color: #666;
+    font-weight: 400;
+}
+.playlist {
+    padding-bottom: px(54);
+}
+
+section.playlist>ol li{ position: relative;} 
+section.playlist>ol li { display: flex; align-items: center; justify-content: flex-start; } 
+section.playlist>ol .index{  color: #999; text-align:center; font-size: px(17); font-weight: 400; width: px(40); } 
+section.playlist>ol a { flex: 1; border-bottom: 1px solid#e2e2e3; padding: px(6) 0; }
+section.playlist>ol .info {
+    width: calc(100% - 40px);
+}
+section.playlist>ol .info h3{ 
+    font-size: 17px; 
+    font-weight: 400; 
+    color:#333;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: normal;} 
+section.playlist>ol .info p { font-size: 12px; color: #888; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: normal; display: flex; align-items: center; margin-top:4px;}
+section.playlist>ol .info p>.icon {width: px(12); height: px(12); fill: #FE682F; margin-right: 4px;}
+section.playlist>ol .info>.icon { width: px(22); height: px(22); fill: #aaa; overflow: hidden; } 
+section.playlist>ol .info>.icon { position: absolute; right: px(10); top: px(14); }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    background: #fff;
+}
+footer .btn {
+    margin: 7px 30px;
+    background: #d33a31;
+    border: 1px solid #d33a31;
+    border-radius: 25px;
+    text-align: center;
+    color:#fff;
+    height: px(40);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn .icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}

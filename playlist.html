@@ -6,67 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>歌单</title>
     <link rel="stylesheet" href="css/playlist.css">
-    <script src="//at.alicdn.com/t/font_728008_f4jp77fz9u.js"></script>
+    <script>
+        let pageWidth = window.innerWidth
+        document.write(`<style>html{font-size:${pageWidth / 10}px}</style>`)
+    </script>
+    <script src="//at.alicdn.com/t/font_728008_qntnb1utoq.js"></script>
 </head>
 <body>
     <header>
+        <div class="bg"></div>
         <div class="wrap">
-            <img src="#" alt="">
-            <h3>歌单标语，推荐特色</h3>
-            <a href="#">
-                <img src="" alt="">
-                <p>歌单收集者</p>
-            </a>
+            <div class="cover">
+                <span class="tag">歌单</span>
+                <p class="num">
+                    <svg class="icon">
+                        <use xlink:href="#icon-erji"></use>
+                    </svg>
+                    120万
+                </p>
+            </div>
+            <div class="info">
+                <h3>歌单标语，推荐特色</h3>
+                <a href="#" class="user">
+                    <div class="avatar">
+                        <img src="http://p1.music.126.net/Z_O87E5cX9-y9_Jtyv8kQw==/109951163163591639.jpg">
+                        <svg class="icon">
+                            <use xlink:href="#icon-huiyuan"></use>
+                        </svg>
+                    </div>
+                    <span>歌单收集者</span>
+                </a>
+            </div>
         </div> 
     </header> 
     <section class="intro">
         <p class="tags">标签：
-            <span>另类/独立</span>
-            <span>摇滚</span>
+            <!-- <span>另类/独立</span>
+            <span>摇滚</span> -->
         </p>
-        <div class="detal">
-
+        <div class="dsp fold">
+            <p class="content">
+                简介：<br>
+                
+            </p>
+            <svg class="icon">
+                <use xlink:href="#icon-shang"></use>
+            </svg>
         </div>
     </section> 
     <section class="playlist">
         <h3 class="title">歌曲列表</h3>
         <ol>
-            <li>
-                <h3>歌曲名1</h3>
-                <p>歌手1-专辑1</p>
-                <svg class="icon">
-                    <use xlink:href="#icon-play"></use>
-                </svg>
-                <a href="#"></a>
-            </li>
-            <li>
-                <h3>歌曲名2</h3>
-                <p>歌手2-专辑2</p>
-                <svg class="icon">
-                    <use xlink:href="#icon-play"></use>
-                </svg>
-                <a href="#"></a>
-            </li>
-            <li>
-                <h3>歌曲名3</h3>
-                <p>歌手3-专辑3</p>
-                <svg class="icon">
-                    <use xlink:href="#icon-play"></use>
-                </svg>
-                <a href="#"></a>
-            </li>
-            <li>
-                <h3>歌曲名4</h3>
-                <p>歌手4-专辑4</p>
-                <svg class="icon">
-                    <use xlink:href="#icon-play"></use>
-                </svg>
-                <a href="#"></a>
-            </li>
+            <!-- <li>
+                <div class="index">1</div>
+                <a href="#">
+                    <div class="info">
+                        <h3>歌曲名1</h3>
+                        <p>歌曲1-专辑1</p>
+                        <svg class="icon">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li> -->
         </ol>
     </section> 
     <footer>
-        <div class="btn">收藏歌单</div>
+        <div class="btn">
+            <svg class="icon">
+                <use xlink:href="#icon-wy"></use>
+            </svg>
+            <span>收藏歌单</span> 
+        </div>
     </footer> 
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/playlist.js"></script>
 </body>
 </html>
