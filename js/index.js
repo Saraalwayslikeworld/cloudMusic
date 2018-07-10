@@ -12,7 +12,7 @@ let indexPage = {
         $('.latestMusic>.loading').remove()
     },
     render(list,$node){
-        if(list[0].rank){ list = list.sort((a,b)=>{return a.rank>b.rank})}
+        list = list.sort((a,b)=>{return a.rank>b.rank})
         list.forEach(item=>{
             let $li = `
                 <li>
