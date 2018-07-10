@@ -5,13 +5,13 @@ let indexPage = {
         this.hotSearch()
     },
     getLatestMuisc(){     
-        $.get('../static/songs.json').then((list)=>{
+        $.get('./static/songs.json').then((list)=>{
             this.render(list,$('.latestMusic>ol'))
         })
         $('.latestMusic>.loading').remove()
     },
     render(list,$node){
-        list = list.sort((a,b)=>{return a.rank>b.rank})
+        if(list[0].rank){ list = list.sort((a,b)=>{return a.rank>b.rank})}
         list.forEach(item=>{
             let $li = `
                 <li>
